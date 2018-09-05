@@ -263,8 +263,6 @@ nav .cart-mini:hover .box{
 	position: relative;
 }
 .banner .picture img{
-	/*background-image: url('../img/benner.jpg');*/
-	/*background-size: cover;*/
 	position: absolute;
 	left:0;
 	top:0;
@@ -286,56 +284,54 @@ nav .cart-mini:hover .box{
 .banner ul li{
 	width: 234px;
 	height: 42px;
-	position: relative;
-}
-.banner ul li:hover .lis{
-	/*display:block;*/
-	width:900px;
-	transition:all .5s;
 }
 .banner ul .lis{
 	width:0px;
 	height:460px;
-	/*background:#fff;*/
+	background:#fff;
 	position:absolute;
 	left:234px;
-	top:-20px;
-	/*box-shadow: 0 0 19px 3px rgba(0,0,0,0.2);*/
-
+	top:0;
+	display: none;
+	box-shadow: 0 0 10px 3px rgba(0,0,0,0.1);
+	z-index:5;
 }
-.banner ul .aa{
-	background-image: url('../img/ddd1.png');
-	background-size: cover;
+.banner ul .lis .ll{
+	width:241px;
+	height:100%;
+	float:left;
 }
-.banner ul .bb{
-	top:-60px;
-	background-image: url('../img/ddd2.png');
-	background-size: cover;
+.banner ul .lis .box{
+	width:241px;
+	height:76px;
+	display:flex;
+	flex-direction:row;
+	align-items: center;
 }
-.banner ul .cc{
-	 top:-103px;
-	background-image: url('../img/ddd3.png');
-	background-size: cover;
- }
-.banner ul .dd{
-	 top:-145px;
-	 background-image: url('../img/ddd4.png');
-	 background-size: cover;
- }
-.banner ul .ee{
-	 top:-187px;
-	 background-image: url('../img/ddd4.png');
-	 background-size: cover;
- }
-.banner ul .ff{
-	 top:-230px;
-	 background-image: url('../img/ddd3.png');
-	 background-size: cover;
- }
-.banner ul .gg{
-	top:-270px;
-	background-image: url('../img/ddd2.png');
-	background-size: cover;
+.banner ul .lis .box:hover p{
+	color:#ff6700;
+}
+.banner ul .lis .box img{
+	display:block;
+	width:40px;
+	height:40px;
+	margin-left:20px;
+}
+.banner ul .lis .box p{
+	font-size:14px;
+	line-height:76px;
+	margin-left:10px;
+}
+.banner ul li:hover .lis{
+	display:block;
+	width:966px;
+	transition:all .5s;
+}
+.banner ul li:hover .cc{
+	width:755px;
+}
+.banner ul li:hover .dd{
+	width:514px;
 }
 .banner ul .lis img{
 	width:100%;
@@ -708,13 +704,13 @@ nav .cart-mini:hover .box{
 }
 .phone .left{
 	width: 234px;
-	height: 614px;
+	height: 610px;
 	float: left;
 	margin-right: 10px;
 }
 .phone .left img{
 	width: 234px;
-	height: 614px;
+	height: 610px;
 	float: left;
 
 }
@@ -774,11 +770,22 @@ nav .cart-mini:hover .box{
 
 
 /* 长图二结束 */
+.long1{
+	 width: 100%;
+	 height: 155px;
+	 margin-bottom: 20px;
+	 background: #fff;
+ }
+.long1 img{
+	width: 1200px;
+	height: 120px;
+	display: block;
+}
 .long2{
 	width: 100%;
-	height: 140px;
+	height: 155px;
 	margin-bottom: 20px;
-	background: #e9e8e6;
+	margin-top:20px;
 }
 .long2 img{
 	width: 1200px;
@@ -819,14 +826,30 @@ nav .cart-mini:hover .box{
 	line-height: 38px;
 	color: #000;
 }
-.tv .title ul li:hover{
+.tv .title ul .active{
 	color:  #ff6b00;
 	border-bottom: 2px  #ff6b00 solid;
 }
 .tv .tab-box{
 	width: 100%;
 	height: 614px;
-	
+	display:flex;
+	flex-direction: row;
+	position:relative;
+}
+.tv ul .left{
+	width:240px;
+	height:100%;
+}
+.tv ul .right{
+	width:960px;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:240px;
+}
+.tv ul .list1{
+	display:none;
 }
 .tv .tab-box li {
 	width: 230px;

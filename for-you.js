@@ -209,4 +209,22 @@ window.onload=function(){
     let leftb3=document.querySelector(".content ul li .leftb.c");
     let rightb3=document.querySelector(".content ul li .rightb.c");
     frist(hook3,dot4,leftb3,rightb3,widtha);
+
+
+
+
+    // 家电选项卡
+    let num=document.querySelectorAll(".tv .title ul li");
+    let son=document.querySelectorAll(".tv ul .right");
+    console.log(num,son);
+    for(let i=0;i<num.length;i++){
+        num[i].onmouseover=function () {
+            for(let j=0;j<num.length;j++){
+                son[j].style.display="none";
+                num[j].classList.remove("active");
+            }
+            son[i].style.display="block";
+            num[i].classList.add("active");
+        }
+    }
 }
